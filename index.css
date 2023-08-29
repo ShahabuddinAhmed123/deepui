@@ -223,14 +223,13 @@ text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: flex;
   flex-direction: row;
   gap: 30px;
   justify-content: center;
   overflow: hidden;
 }
 .D {
-  width: 180px;
+  width: 20%;
   height: 26px;
   padding: 7px;
   border-radius: 4px;
@@ -249,7 +248,7 @@ text-decoration: none;
   color: #d14d02;
 }
 .reverse {
-  width: 71px;
+  width: 20%;
   height: 26px;
   padding: 7px;
   border-radius: 4px;
@@ -367,8 +366,13 @@ text-decoration: none;
     display: none;
   }
 }
+@media (min-width: 600px) and (max-width: 780px){
+.text a{
+  display: none;
+}
+}
 /**************************************/
-@media only screen and (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) and (max-width: 899px) {
   .logo {
     height: 85px;
     margin-top: 40px;
@@ -429,74 +433,46 @@ text-decoration: none;
     height: 85px;
   }
 }
-
-@media (min-width: 900px) and (max-width: 1079px) {
+@media (min-width: 900px) and (max-width: 1199px) {
   /* Adjust the layout of the navbar */
   .navbar {
+    display: flex;
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-  }
-  .logo {
-    width: 94px;
-    height: 30px;
-    margin-top: 64px;
-    margin-left: 63px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(Logo.png);
-  }
-  .text {
-    display: flex;
+    justify-content: center;
     flex-direction: row;
+    padding: 30px;
   }
-  .navbar button {
-    width: 140px;
-    height: 48px;
-    border-radius: 68px;
-    background-color: #d14d02;
-    margin-top: 53px;
-    margin-left: 37px;
-    border-color: transparent;
-    margin-right: 63px;
+  .logo{
+    width: 100px;
   }
-  .navbar button a {
-    color: white;
-    font-family: Neue Haas Grotesk Display Pro;
-    font-size: 18px;
+  .logo img{
+    background-size: cover;
+    height: 30px;
+  }
+  .text{
+    width: 90%;
+  }
+  .text a{
+    padding-left: 0px;
+    font-family: 'Roboto', sans-serif;  font-size: 18px;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 22px;
     letter-spacing: -0.01em;
     text-align: center;
+    color: #D14D02;
     text-decoration: none;
-    width: 169px;
-    height: 18px;
+    
   }
-  .navbar button {
-    width: 140px;
-    height: 48px;
+  .join-button{
+    width: 0px;
+    height: 0px;
     border-radius: 68px;
     background-color: #d14d02;
-    margin-top: 53px;
-    margin-left: 37px;
-    border-color: transparent;
-    margin-right: 63px;
-  }
-  .navbar button a {
-    color: white;
-    font-family: Neue Haas Grotesk Display Pro;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: -0.01em;
-    text-align: center;
-    text-decoration: none;
-    width: 169px;
-    height: 18px;
-  }
+    border: none;
+    overflow: hidden;
+    }
+ 
   .r-icon {
     display: none;
   }
@@ -528,7 +504,7 @@ text-decoration: none;
     flex-direction: row;
   }
   .right-img {
-    width: 50%;
+    width: 700px;
     margin-top: 0;
     margin-left: 180px;
     background-size: contain;
@@ -541,6 +517,7 @@ text-decoration: none;
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 50px;
+    height: auto;
   }
 
   .sleep p {
@@ -676,7 +653,7 @@ text-decoration: none;
 
 /****************************************************************************************/
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .mid {
     display: flex;
     flex-direction: column;
@@ -769,8 +746,8 @@ text-decoration: none;
   }
 }
 /*********************************************************************************/
-@media (max-width: 900px){
-    .mid {
+@media  (min-width: 601px) and (max-width: 899px) {
+  .mid {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -791,12 +768,8 @@ text-decoration: none;
     }
   
     .mid-img {
-      background-image: url(Union.png);
-      margin-top: 0px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 234px;
-      height: 295px;
+      width: 460px;
+      height: 530px;
     }
   
     .you p {
@@ -804,11 +777,11 @@ text-decoration: none;
     }
   
     .we2 {
-      height: 50px;
+      height: auto;
     }
     .we2 p {
       font-family: Roslindale;
-      font-size: 30px;
+      font-size: 50px;
       overflow: hidden;
       font-weight: 300;
       letter-spacing: -0.01em;
@@ -818,8 +791,9 @@ text-decoration: none;
     .you2 h3 {
       height: auto;
       font-family: Neue Haas Grotesk Display Pro;
-      font-size: 20px;
+      font-size: 25px;
       font-weight: 400;
+      overflow: hidden;
       line-height: 27px;
       letter-spacing: -0.01em;
       text-align: center;
@@ -834,8 +808,8 @@ text-decoration: none;
       align-items: center;
     }
     .mid2 button {
-      width: 319px;
-      height: 55px;
+      width: 380px;
+      height: 85px;
       margin-top: 30px;
       padding: 22px;
       overflow: hidden;
@@ -845,11 +819,12 @@ text-decoration: none;
     }
     .mid2 button p {
       font-family: Neue Haas Grotesk Display Pro;
-      font-size: 15px;
+      font-size: 25px;
       font-weight: 600;
-      line-height: 15px;
+      line-height: 25px;
       letter-spacing: -0.01em;
       text-align: center;
+      overflow: hidden;
     }
     .you {
       display: none;
@@ -861,8 +836,22 @@ text-decoration: none;
       display: none;
     }
 }
+@media (min-width: 900px) and (max-width: 1199px) {
+.mid{
+  padding: 0;
+}
+.mid-img{
+  height: 500px;
+  width: 400px;
+}
 
-
+.we p{
+  font-size: 45px;
+}
+.you p{
+  font-size: 15px;
+}
+}
 /********************************************************************************/
 .mid3 {
   background-image: url(bg.png);
@@ -877,7 +866,6 @@ text-decoration: none;
   display: none;
 }
 .mid3-text {
-  height: 70px;
   margin-top: 140px;
 }
 .mid3-text p {
@@ -890,7 +878,6 @@ text-decoration: none;
   color: #0e4f7e;
 }
 .text2 {
-  height: 81px;
   margin-top: 34px;
 }
 .text3 p {
@@ -1221,7 +1208,289 @@ text-decoration: none;
     height: 63px;
   }
 }
+@media  (min-width: 601px) and (max-width: 899px) {
+.mid3{
+  height: 1500px;
+}
+  .last{
+  flex-direction: column;
+  height: 1000px;
+  gap: 40px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.last-one {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 14px;
+  background-color: #ffffff;
+  gap: 15px;
+}
+.pic {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  background: #e0ebfc;
+}
+.pic1 {
+  background-image: url(Stroke\ 1.png);
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+}
+.last-one p {
+  font-family: Neue Haas Grotesk Display Pro;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  overflow: hidden;
+}
+.last-one p1 {
+  font-family: Neue Haas Grotesk Display Pro;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -1%;
+  overflow: hidden;
+  text-align: center;
+  height: 63px;
+}
 
+.last-two {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 14px;
+  background-color: #ffffff;
+  gap: 15px;
+}
+.pic-two {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  background: #e0ebfc;
+}
+.pic2 {
+  background-image: url(Stroke\ 1.png);
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+}
+.last-two p {
+  font-family: Neue Haas Grotesk Display Pro;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  overflow: hidden;
+}
+.last-two p1 {
+  font-family: Neue Haas Grotesk Display Pro;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -1%;
+  overflow: hidden;
+  text-align: center;
+  height: 63px;
+}
+.last-three {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 14px;
+  background-color: #ffffff;
+  gap: 15px;
+}
+.pic-three {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  background: #e0ebfc;
+}
+.pic3 {
+  background-image: url(Stroke\ 1.png);
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+}
+.last-three p {
+  font-family: Neue Haas Grotesk Display Pro;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  overflow: hidden;
+}
+.last-three p1 {
+  font-family: Neue Haas Grotesk Display Pro;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -1%;
+  overflow: hidden;
+  text-align: center;
+  height: 63px;
+}
+}
+@media (min-width: 900px) and (max-width: 1099px) {
+  .last-one {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 14px;
+    background-color: #ffffff;
+    gap: 20px;
+  }
+  .pic {
+    width: 88px;
+    height: 88px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #e0ebfc;
+  }
+  .pic1 {
+    background-image: url(Stroke\ 1.png);
+    background-size: cover;
+    width: 37px;
+    height: 37px;
+  }
+  .last-one p {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .last-one p1 {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    width: 246px;
+    height: 63px;
+  }
+  
+  .last-two {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 14px;
+    background-color: #ffffff;
+    gap: 20px;
+  }
+  
+  .pic-two {
+    width: 88px;
+    height: 88px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #e0ebfc;
+  }
+  .pic2 {
+    background-image: url(Stroke\ 1.png);
+    background-size: cover;
+    width: 37px;
+    height: 37px;
+  }
+  .last-two p {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .last-two p1 {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    width: 246px;
+    height: 63px;
+  }
+  .last-three {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 14px;
+    background-color: #ffffff;
+    gap: 20px;
+  }
+  .pic-three {
+    width: 88px;
+    height: 88px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #e0ebfc;
+  }
+  .pic3 {
+    background-image: url(Stroke\ 1.png);
+    background-size: cover;
+    width: 37px;
+    height: 37px;
+  }
+  .last-three p {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .last-three p1 {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    width: 246px;
+    height: 63px;
+  }
+}
 /***********************************************/
 
 .mid4 {
@@ -1287,6 +1556,7 @@ text-decoration: none;
   overflow: hidden;
   margin-top: 10px;
 }
+
 .box-one img {
   width: 32px;
   height: 32px;
@@ -1542,27 +1812,109 @@ align-items: center;
   .box2-one{
     height: 70px;
     width: 319px;
+    
   }
   .box2{
     margin-top: 0;
   }
   .box2-two{
     width: 319px;
-height: 200px;
+height: 250px;
 border-radius: 14px;
 justify-content: center;
 display: flex;
 align-items: center;
   }
-  .two-2{
- display: none;
+  .reverse {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    align-items: center;
+    text-align: center;
   }
-  .two-3{
+                                        
+  .reverse img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+  .reverse p1 {
+    font-family: Neue Haas Grotesk Text Pro;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .box2-two .two {
+    width: 10px;
+    height: 10px;
+    rotate: 135 deg;
+  }
+  .two-2{
     font-size: 14px;
     text-align: center;
     width: auto;
     margin-top: 0;
   }
+  .two-3{
+    font-size: 0px;
+  }
+}
+@media  (min-width: 601px) and (max-width: 899px) {
+.boxes{
+  flex-direction: column;
+}
+.mid4{
+  height: 1200px;
+  margin-top: 40px;
+}
+.mid4 p3{
+  font-size: 60px;
+}
+}
+@media (min-width: 900px) and (max-width: 1099px){
+.box-one{
+  width: 432px;
+  height: 76px;
+}
+.box-two{
+  width: 432px;
+  height: 76px;
+}
+.box-three{
+  width: 432px;
+  height: 76px;
+}
+.box2-one{
+  width: 432px;
+  height: 76px;
+}
+.box2-two{
+  width: 432px;
+}
+.reverse{
+  width: 400px;
+}
+.two-2{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+}
+.get button {
+  width: 300px;
+  height: 98px;
+}
+.get p {
+  font-size: 25px;
+  line-height: 20px;
+  overflow: hidden;
+  width: 250px;
+}
 }
 /*****************************************************************************/
  .mid5 {
@@ -1579,7 +1931,7 @@ align-items: center;
 
 .boxx1 {
   width: 566px;
-  height: 371px;
+  height: 400px;
   margin-top: 0px;
   display: flex;
   flex-direction: column;
@@ -1790,7 +2142,69 @@ text-align: center;
   color: white;
 }
 }
+@media (min-width: 600px) and (max-width: 1200px) {
+  .mid5{
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+    height: 1100px;
+  }
+  .mid5 img{
+    height: 500px;
+  }
+  .boxx1 {
+    height: 500px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: auto;
+  }
+  .boxx1 p2{
+    font-size: 55px;
+  }
+  .boxx1 p3{
+    display: none;
+  }
+  .boxx1 p4 {
+    font-size: 30px;
+    line-height: 20px;
+    height: auto;
+  }
+  .email {
+    height: 205px;
+    align-items: center;
+    gap: 30px; 
+    flex-direction: column;
+  }
+  .email-box {
+    width: 450px;
+    height: 100px;
+    padding: 40px;
+    border-radius: 24px;
+    gap: 0;
+    overflow: hidden;
+  }
+  .email .mail {
+    width: 80%;
+    height: 150px;
+    padding: 40px;
+    border: none;
+    background-color: #0E4F7E;
+  }
+  .email .mail  p{
+  font-size: 30px;
+  line-height: 30px;
 
+overflow: hidden;  
+  }
+  .email-box input {
+    height: 25px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
 /***************************************MID 6*******************************************/
 
 .mid6 { 
@@ -1831,6 +2245,8 @@ text-align: center;
   border-radius: 68px;
   background: #2a5b5b;
   border: none;
+  width: 20%;
+  float: left;
 }
 .txt1 p {
   font-family: Neue Haas Grotesk Display Pro;
@@ -1924,36 +2340,28 @@ letter-spacing: 0em;
 overflow: hidden;
 text-align: center;
   }
-  .txt2 {
-    width: 319px;
-    height:57.02px;
-    top: 673px;
-    left: 28px;
-    padding: 22px;
-    border-radius: 49px;
-    overflow: hidden;
+  .txt1 {
+      width: 319px;
+      height:57.02px;
+      top: 673px;
+      left: 28px;
+      padding: 22px;
+      border-radius: 49px;
+      overflow: hidden;
     background: #2A5B5B;
-    
   }
-  .txt2 p {
-    height: 13px;
+  .txt1 p {
 font-family: Neue Haas Grotesk Display Pro;
 font-size: 15px;
 font-weight: 600;
 line-height: 12px;
 letter-spacing: -0.01em;
 text-align: center;
-  color: white;
+color: white;
         
   }
-  .txt1 p {
-    display: none;
-  }
-  .txt1{
-    display: none;
-  }
   .footer{
-    height: 106px;
+    height: 90px;
     background-color: #2a5b5b;
     display: flex;
     flex-direction: column;
@@ -1983,3 +2391,34 @@ text-align: center;
       display: none;
     }
 }
+@media (min-width: 600px) and (max-width: 1200px) {
+  .txt1 {
+    width: 350px;
+    height: 76px;
+    padding: 4%;
+    width: 30%;
+    float: right;
+    overflow: hidden;
+  }
+  .txt1 p {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #ffffff;
+    overflow: hidden;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*responsive image
+<img src="img_girl.jpg" style="width:100%;">
+*/
